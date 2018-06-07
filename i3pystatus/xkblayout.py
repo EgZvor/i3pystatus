@@ -35,11 +35,13 @@ class Xkblayout(IntervalModule):
     format = "\u2328 {symbol}"
     layouts = []
     uppercase = True
+    color = "#FFFFFF"
     settings = (
         ("color", "RGB hexadecimal color code specifuer, defaults to #FFFFFF"),
         ("format", "Format string"),
         ("layouts", "List of layouts"),
         ("uppercase", "Flag for uppercase output"),
+        ("color", "The text color"),
     )
 
     on_leftclick = ["change_layout", 1]
